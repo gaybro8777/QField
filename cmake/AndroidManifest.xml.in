@@ -16,11 +16,7 @@
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
-      <!-- Git Revision -->
-      <meta-data android:name="android.app.git_rev" android:value="@string/git_rev"/>
-      <!-- Git Revision -->
-    </activity>
-    <activity-alias android:name="ch.opengis.@APP_PACKAGE_NAME@.QgsFileHandlerActivity" android:targetActivity="ch.opengis.@APP_PACKAGE_NAME@.QFieldActivity">
+
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
@@ -46,11 +42,11 @@
         <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.qgz" />
         <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.qgz" />
       </intent-filter>
-      <meta-data android:name="id" android:value="1"/>
+
       <!-- Git Revision -->
       <meta-data android:name="android.app.git_rev" android:value="@string/git_rev"/>
       <!-- Git Revision -->
-    </activity-alias>
+    </activity>
 
     <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation"
               android:name="org.qtproject.qt5.android.bindings.QtActivity"
